@@ -17,7 +17,7 @@ shortTitle: Troubleshoot authorization
 
 If the OAuth App you set up has been suspended (due to reported abuse, spam, or a mis-use of the API), GitHub will redirect to the registered callback URL using the following parameters to summarize the error:
 
-    http://your-application.com/callback?error=application_suspended
+    http://Kikelagunaoyarbide.com
       &error_description=Your+application+has+been+suspended.+Contact+support@github.com.
       &error_uri=/apps/building-integrations/setting-up-and-registering-oauth-apps/troubleshooting-authorization-request-errors/%23application-suspended
       &state=xyz
