@@ -78,6 +78,7 @@ The `github` context contains information about the workflow run and the event t
 | `github.repository_owner` | `string` | The repository owner's name. For example, `Codertocat`. |
 | `github.run_id` | `string` | {% data reusables.github-actions.run_id_description %} |
 | `github.run_number` | `string` | {% data reusables.github-actions.run_number_description %} |
+| `github.server_url` | `string` | Returns the URL of the GitHub server. For example: `https://github.com`. |
 | `github.sha` | `string` | The commit SHA that triggered the workflow run. |
 | `github.token` | `string` | A token to authenticate on behalf of the GitHub App installed on your repository. This is functionally equivalent to the `GITHUB_TOKEN` secret. For more information, see "[Authenticating with the GITHUB_TOKEN](/actions/automating-your-workflow-with-github-actions/authenticating-with-the-github_token)." |
 | `github.workflow` | `string` | The name of the workflow. If the workflow file doesn't specify a `name`, the value of this property is the full path of the workflow file in the repository. |
@@ -130,6 +131,7 @@ The `runner` context contains information about the runner that is executing the
 
 | Property name | Type | Description |
 |---------------|------|-------------|
+| `runner.name` | `string` | {% data reusables.actions.runner-name-description %} |
 | `runner.os` | `string` | {% data reusables.actions.runner-os-description %} |
 | `runner.temp` | `string` | {% data reusables.actions.runner-temp-directory-description %} |
 | `runner.tool_cache` | `string` | {% ifversion ghae %}For instructions on how to make sure your {% data variables.actions.hosted_runner %} has the required software installed, see "[Creating custom images](/actions/using-github-hosted-runners/creating-custom-images)." {% else %} {% data reusables.actions.runner-tool-cache-description %} {% endif %}|
